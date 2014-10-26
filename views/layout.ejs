@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grace Baptist Church</title>
+    <meta name="description" content="Grace Baptist Church">
+    <meta name="author" content="brian.schmitt@ieee.org">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- not sure if these next 2 are necessary -->
+    <link rel="stylesheet" href="lib/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="lib/html5-boilerplate/css/main.css">
+
+    <link rel="icon" href="../../favicon.ico">
+    <script src="lib/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="lib/owl-carousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owl-carousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="lib/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo-transparent2.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- Begin page content -->
+<%- body %>
+
+<div class="footer">
+    <div class="top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 mailing-list">
+                    <h3 class="text-uppercase">Join Our Mailing List</h3>
+
+                    <div class="section">
+                        <button class="btn-lg btn-success">ENTER YOUR EMAIL</button>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 contact-us">
+                    <h3 class="text-uppercase">Contact Us</h3>
+
+                    <div class="section">
+                        <ul>
+                            <li class="address">
+                                <address>
+                                    12 Orchard Ridge Rd.<br/>
+                                    Chappaqua, NY 10514<br/>
+                                </address>
+                            </li>
+                            <li class="phone">(914) 238-3022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 connect-with-us">
+                    <h3 class="text-uppercase">Connect With Us</h3>
+                    <div class="section">
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/GraceBaptistChurchofwestchester"><img src="images/fb.png" alt="Facebook" border="0" /></a></li>
+                            <li><a href="https://www.twitter.com/"><img src="images/twt.png" alt="Twitter" border="0" /></a></li>
+                            <li><a href="mailto://pastorholland@gmail.com"><img src="images/eml.png" alt="Email" border="0" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="container">
+            <p class="text-muted">&copy; Copyright 2014 Grace Baptist Church. All rights reserved. </p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/owl-carousel2/dist/owl.carousel.js"></script>
+
+<script src="lib/lodash/dist/lodash.min.js"></script>
+<script src="lib/bluebird/js/browser/bluebird.js"></script>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+</body>
+</html>
+

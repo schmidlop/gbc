@@ -1,0 +1,2 @@
+# gbc
+### a Sails application

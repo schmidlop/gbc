@@ -111,13 +111,14 @@ code {
     color:#f5f5f5;
 }
 
-dl > dt::before {
-    content: "*";
-    padding-right: 3px;
+
+dl > dd ,
+dl > dt {
+    padding-left: 8px;
 }
 
-dl > dd {
-    padding-left: 8px;
+.first-visit dl > dd {
+    padding-left: 0;
 }
 
 .service-times dl > dt {
@@ -127,12 +128,16 @@ dl > dd {
     padding-bottom: 15px;
 }
 
-.our-beliefs dl > dt {
+.our-beliefs dl > dt,
+.first-visit dl > dt
+{
     padding-top:8px;
 }
 
 .service-times dl > dt:first-child,
-.our-beliefs dl > dt:first-child {
+.our-beliefs dl > dt:first-child,
+.first-visit dl > dt:first-child
+{
     padding-top:0;
 }
 
@@ -144,7 +149,121 @@ dl > dd {
     background: url('../images/bg.png') repeat;
 }
 
-.mailing-list .section,
-.connect-with-us .section {
+/*.mailing-list .section,*/
+/*.connect-with-us .section {*/
+    /*padding-left: 20px;*/
+/*}*/
+
+
+.our-beliefs dl {
+    list-style: none;
+}
+
+.our-beliefs dl img.cross{
+    padding-right: 3px;
+    margin-top: -4px;
+}
+
+.our-beliefs  dl > dd {
+    padding-left: 24px;
+}
+
+.footer {
+    color:#ffffff;
+}
+
+.contact-us ul {
+    list-style: none;
+}
+
+.contact-us section ul {
+    -webkit-padding-start: 0px;
+    padding-left:0;
+}
+
+.contact-us .phone span.content {
+    padding-left: 6px;
+}
+
+.contact-us .address address {
+    padding-left: 6px;
+}
+
+div.image-wrapper{
+    float:left;
+    position:relative; /* important(so we can absolutely position the description div */
+}
+div.caption-block{
+    position:absolute; /* absolute position (so we can position it where we want)*/
+    bottom:0; /* position will be on bottom */
+    left:0;
+    width:100%;
+    background-color:black;
+    color:white;
+    opacity:0.6; /* transparency */
+    filter:alpha(opacity=60); /* IE transparency */
+}
+p.caption{
+    padding:10px;
+    margin:0;
+}
+
+.events .header {
+    width:100%;
+}
+.events .month-day {
+    width: 40px;
+}
+
+.events .month-day,
+.events .title-block {
+    float:left;
+}
+
+.events .month-day .day {
+    font-size:30px;
+}
+.events .month-day .month {
+    margin-top: -10px;
+}
+.events .month-day .day,
+.events .month-day .month {
+    color:#7aa23f;
+    width:100%;
+    text-align: right;
+}
+
+.events .title-block {
     padding-left: 20px;
+    margin-top:15px;
+}
+
+.events .title {
+    text-transform: uppercase;
+}
+.events .subtitle {
+    font-size: 10px;
+}
+
+.events dd.description {
+    margin-bottom:15px;
+    padding-left: 15px;
+}
+
+.upcoming-events .btn-wrap {
+    width:100%;
+    text-align:center;
+}
+
+.first-visit dl {
+    padding-left:8px;
+}
+.first-visit dl > dt {
+    padding-left:0;
+}
+
+.mailing-list,
+.contact-us ,
+.connect-with-us {
+    text-align:center;
 }

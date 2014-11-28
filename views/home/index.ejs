@@ -1,5 +1,5 @@
 <div class="owl-carousel">
-    <div><img src="http://placehold.it/960x300&text=one"/></div>
+    <div><img src="/images/welcome.png"/></div>
     <div><img src="http://placehold.it/960x300&text=two"/></div>
     <div><img src="http://placehold.it/960x300&text=three"/></div>
     <div><img src="http://placehold.it/960x300&text=four"/></div>
@@ -23,24 +23,27 @@
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 location" ng-controller="MyCtrl1">
                 <h2>Church Location</h2>
-                <ui-gmap-google-map center='{lat:41.160875,lng:-73.766576}' zoom='10' draggable='false' pan='false'></ui-gmap-google-map>
+                <ui-gmap-google-map center='{latitude:41.160875,longitude:-73.766576}' zoom='10' draggable='false'
+                                    pan='false'></ui-gmap-google-map>
 
                 <!-- proximanova light -->
                 <p>Located on 12 Orchard Ridge Road in Chappaqua, NY. Exit 32 off the Saw Mill Parkway. Corner of King
-                    St. (South 120) and Orchard Ridge Road. <a target="_blank" href="http://maps.google.com/?daddr=12+Orchard+Ridge+Rd,+Chappaqua,+NY+10514">(directions)</a></p>
+                    St. (South 120) and Orchard Ridge Road. <a target="_blank"
+                                                               href="http://maps.google.com/?daddr=12+Orchard+Ridge+Rd,+Chappaqua,+NY+10514">(directions)</a>
+                </p>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 our-beliefs">
                 <h2>Our Beliefs</h2>
                 <dl>
-                    <dt>The authority of the Bible</dt>
+                    <dt><img src="/images/cross.png" class="cross"/>The authority of the Bible</dt>
                     <dd>The Bible reveals God, the fall of man, the way of salvation, and God’s planned purpose
                         throughout the ages.
                     </dd>
-                    <dt>Salvation by Grace</dt>
+                    <dt><img src="/images/cross.png" class="cross"/>Salvation by Grace</dt>
                     <dd>Men are justified by faith alone and are accounted righteous before God only through the merit
                         of our Lord and Savior Jesus Christ.
                     </dd>
-                    <dt>The return of Jesus Christ</dt>
+                    <dt><img src="/images/cross.png" class="cross"/>The return of Jesus Christ</dt>
                     <dd>We believe in the visible and personal return of Jesus Christ and the rapture of the Church, no
                         man knows the day or hour of His return.
                     </dd>
@@ -62,15 +65,78 @@
                 </dl>
             </div>
         </div>
+        <!--<div class="row">-->
+        <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">-->
+        <!--<img src="/images/fallfestival.png"/>-->
+        <!--</div>-->
+        <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">-->
+        <!--<img src="/images/jasoncastro.png"/>-->
+        <!--</div>-->
+        <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">-->
+        <!--<img src="http://placehold.it/360x270&text=first+visit"/>-->
+        <!--</div>-->
+        <!--</div>-->
         <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="http://placehold.it/360x270&text=ministries"/>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 upcoming-events">
+                <h2>Upcoming Events</h2>
+
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 col-lg-6">
+                        <div class="image-wrapper">
+                            <img src="/images/jasoncastro-square.png"/>
+                            <div class="caption-block">
+                                <p class="caption">Jason Castro and Mrs. Holland @ our Fall Festival 2014</p>
+                            </div>
+                        </div>
+                        <p class="text-muted"><em>For pictures from past events visit our <a href="#gallery">photo gallery</a></em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-6 col-lg-6">
+                        <dl class="section events">
+                            <dt class="header clearfix">
+                                <div class="month-day">
+                                    <div class="day">30</div>
+                                    <div class="month">APR</div>
+                                </div>
+                                <div class="title-block">
+                                    <div class="title">Christmas Drama</div>
+                                    <div class="subtitle">Sunday | 9:30 am</div>
+                                </div>
+                            </dt>
+                            <dd class="description">
+                                This is where a sort of long description of the event would go
+                            </dd>
+                            <dt class="header clearfix">
+                                <div class="month-day">
+                                    <div class="day">30</div>
+                                    <div class="month">APR</div>
+                                </div>
+                                <div class="title-block">
+                                    <div class="title">Christmas Drama</div>
+                                    <div class="subtitle">Sunday | 9:30 am</div>
+                                </div>
+                            </dt>
+                            <dd class="description">
+                                This is where a sort of long description of the event would go
+                            </dd>
+                        </dl>
+                        <div class="btn-wrap">
+                            <button class="btn-lg btn-success">FULL CALENDAR</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="http://placehold.it/360x270&text=updates"/>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="http://placehold.it/360x270&text=first+visit"/>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 first-visit">
+                <h2>Your First Visit</h2>
+                <dl>
+                    <dt>What's available for my kids?</dt>
+                    <dd>We have a variety of programs available for children of all ages. Click here to go to the Children’s Ministry page to see what’s available for those in grades K-5. Click here to learn more about  Student Ministry, our ministry for those in grades 6-12.
+                    <dt>What do I wear?</dt>
+                    <dd>We want you to be comfortable while you are visiting, so what you wear is your choice. You can dress up or dress down, either way is totally acceptable.</dd>
+                    <dt>Where do I park?</dt>
+                    <dd>Look for the Visitor Parking Spaces we have provided! We are also only a short walk from the Chappaqua Train Station.</dd>
+                    <dt>What should I expect in the worship service?</dt>
+                    <dd>You’ll be given a bulletin that will tell you about things that are going on at Grace Baptist Church . There will be worshipful music and a powerful message from the Word of God that will help you as you go about life’s journey. Pastor Larry Holland's messages are Biblical with practical application, which will guide you towards growing in your faith and applying God’s Word to your family, job, and life.</dd>
+                </dl>
             </div>
         </div>
     </div>

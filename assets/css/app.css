@@ -1,3 +1,8 @@
+/* bootstrap overrides */
+.navbar {
+    min-height:88px;
+}
+
 /* app css stylesheet */
 .menu {
   list-style: none;
